@@ -71,7 +71,7 @@ const Dashboard: React.FC = () => {
       setFoods(
         response.data.map((food: Food) => ({
           ...food,
-          formatPrice: formatValue(food.price),
+          formattedPrice: formatValue(food.price),
         })),
       );
     }

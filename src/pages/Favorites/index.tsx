@@ -37,7 +37,7 @@ const Favorites: React.FC = () => {
       setFavorites(
         response.data.map((favorite: Food) => ({
           ...favorite,
-          formatPrice: formatValue(favorite.price),
+          formattedPrice: formatValue(favorite.price),
         })),
       );
     }
