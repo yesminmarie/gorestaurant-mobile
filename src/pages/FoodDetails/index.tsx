@@ -91,6 +91,21 @@ const FoodDetails: React.FC = () => {
     loadFood();
   }, [routeParams]);
 
+  useEffect(() => {
+    async function loadFavorite(): Promise<void> {
+      try {
+        await api.get(`/favorites/${routeParams.id}`);
+
+        setIsFavorite(true);
+      } catch (err) {
+        return;
+      }
+
+      setIsFavorite(true);
+    }
+    loadFavorite();
+  }, [isFavorite, routeParams.id]);
+
   function handleIncrementExtra(id: number): void {
     setExtras(
       extras.map(extra =>
