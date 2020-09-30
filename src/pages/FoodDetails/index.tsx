@@ -6,7 +6,7 @@ import React, {
   useLayoutEffect,
 } from 'react';
 import { Image } from 'react-native';
-
+import { v4 } from 'uuid';
 import Icon from 'react-native-vector-icons/Feather';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import { useNavigation, useRoute } from '@react-navigation/native';
@@ -56,6 +56,7 @@ interface Food {
   description: string;
   price: number;
   image_url: string;
+  thumbnail_url: string;
   formattedPrice: string;
   extras: Extra[];
 }
@@ -158,10 +159,20 @@ const FoodDetails: React.FC = () => {
   }, [extras, food, foodQuantity]);
 
   async function handleFinishOrder(): Promise<void> {
-    // const data = {
-    //   food,
-    // };
-    // await api.post('/orders', data);
+    const selectedExtras = extras.filter(extra => extra.quantity > 0);
+    const data = {
+      id: v4(),
+      product_id: food.id,
+      name: food.name,
+      description: food.description,
+      price: food.price,
+      thumbnail_url: food.thumbnail_url,
+      quantity: foodQuantity,
+      extras: selectedExtras,
+      total: cartTotal,
+    };
+    await api.post('/orders', data);
+    navigation.navigate('OrderCreated');
   }
 
   // Calculate the correct icon name

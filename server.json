@@ -88,6 +88,76 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "id": "719b7ffc-2afb-444d-b32d-422ad4ab5e93",
+      "product_id": 1,
+      "name": "Ao molho",
+      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
+      "price": 19.9,
+      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/ao_molho.png",
+      "quantity": 2,
+      "extras": [
+        {
+          "id": 1,
+          "name": "Bacon",
+          "value": 1.5,
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "name": "Frango",
+          "value": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "R$49,80"
+    },
+    {
+      "id": "445451b9-f45c-496d-bdb8-7e5828c98a71",
+      "product_id": 2,
+      "name": "Veggie",
+      "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
+      "price": "21.90",
+      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/veggie.png",
+      "quantity": 1,
+      "extras": [],
+      "total": "R$21,90"
+    },
+    {
+      "id": "de8993ad-b477-4733-aca3-6af31776e2a6",
+      "product_id": 3,
+      "name": "A la Camarón",
+      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
+      "price": "25.90",
+      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/camarao.png",
+      "quantity": 2,
+      "extras": [],
+      "total": "R$51,80"
+    },
+    {
+      "id": "d3b66766-c8ad-4f6b-a51c-c051b7c7fade",
+      "product_id": 1,
+      "name": "Ao molho",
+      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
+      "price": 19.9,
+      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/ao_molho.png",
+      "quantity": 2,
+      "extras": [
+        {
+          "id": 1,
+          "name": "Bacon",
+          "value": 1.5,
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "name": "Frango",
+          "value": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "R$49,80"
     }
   ],
   "favorites": [
