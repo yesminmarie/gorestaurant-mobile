@@ -12,7 +12,7 @@
 </p>
 
 <h1 id="objective">:bulb: Objective</h1>
-</p>This application is the mobile version of the Go Restaurant app. It allows the customer to view and filter the dishes besides create new orders.</p>
+</p>This project is a mobile version of the Go Restaurant app. It allows the customer to view and filter the dishes. The user can also create new orders and add its prefer dishes to favorites.</p>
 
 <h1 id="technologies">:rocket: Technologies</h1>
 
@@ -61,3 +61,6 @@ $ json-server server.json -p 3333
 $ adb reverse tcp:3333 tcp:3333
 
 ```
+<hr>
+
+Made with :heart: by Yesmin Marie
