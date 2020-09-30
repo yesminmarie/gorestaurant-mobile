@@ -12,7 +12,7 @@
 </p>
 
 <h1 id="objective">:bulb: Objective</h1>
-</p>This project is a mobile version of the Go Restaurant app. It allows the customer to view and filter the dishes. The user can also create new orders and add its prefer dishes to favorites.</p>
+</p>This project is a mobile version of the Go Restaurant app. It allows the customer to view and filter the dishes by categories. The user can also create new orders and add its prefer dishes to favorites. The project is connected with a fake API.</p>
 
 <h1 id="technologies">:rocket: Technologies</h1>
 
